@@ -1,21 +1,28 @@
 import React, { Component } from 'react';
-import {Link} from 'react-router'
+import { Link } from 'react-router';
 
-/// En este archivo solo tienes que agregar codigo en la linea 14, el resto ya esta implementado.
 
 export class App extends Component {
   render() {
     return (
       <div>
         <nav>
-          <Link to='/page1'>Page 1</Link> {/* Este componente viene de React Router*/}
-          <Link to='/page2'>Page 2</Link>
+        
+      <Link to="page1">Page1</Link>
+      <Link to="page2">Page2</Link>
+    
         </nav>
-        {this.props.children}
+
+         {this.props.children}
+ 
       </div>
     )
   }
 }
+
+// No tienes que hacer nada por debajo de esta linea
+//==================================================
+
 
 export const Page1 = (props) => {
   return (
